@@ -1,0 +1,24 @@
+{
+  "name": "onlydev-leo",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rm -rf dist && NODE_ENV=production webpack",
+    "demo": "NODE_ENV=production webpack --config webpack.config.js",
+    "prepublish": "npm run build",
+    "start": "NODE_ENV=production webpack --watch --config webpack.config.js"
+  },
+  "dependencies": {
+    "form-backend-validation": "^2.3.3"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-object-rest-spread": "^6.16.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.4.0",
+    "webpack": "^2.3.3",
+    "webpack-merge": "^4.1.0"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
